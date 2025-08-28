@@ -1,0 +1,63 @@
+/* Neutral Color Palette and Basic Layout */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #ddd;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+input, select {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: #888;
+  color: white;
+  border: none;
+  padding: 0.6rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #666;
+}
+
+.destination {
+  padding: 1rem;
+  background-color: #eee;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.destination.highlight {
+  border: 2px solid #555;
+  background-color: #ccc;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+}

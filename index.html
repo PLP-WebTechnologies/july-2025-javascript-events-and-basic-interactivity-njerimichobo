@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tee Travel</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Tee Travel Destinations</h1>
+    <nav>
+      <button id="toggleDestinations">See Destinations</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Booking Form -->
+    <section id="booking">
+      <h2>Book Your Trip</h2>
+      <form id="bookingForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required/>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required/>
+
+        <label for="destination">Destination:</label>
+        <select id="destination" name="destination" required>
+          <option value="">--Select--</option>
+          <option value="paris">Maasaimara🐅</option>
+          <option value="bali">Diani🌊</option>
+          <option value="newyork">Ol Pejeta🦆</option>
+        </select>
+
+        <button type="submit">Submit</button>
+        <p id="formMessage" class="error-message"></p>
+      </form>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section id="destinations">
+      <h2>Featured Destinations</h2>
+      <div class="destination" onclick="highlightDestination(this)">Maasaimara🐅</div>
+      <div class="destination" onclick="highlightDestination(this)">Diani🌊</div>
+      <div class="destination" onclick="highlightDestination(this)">Ol Pejeta🦆</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Grab Your Passports Nowww😘</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
